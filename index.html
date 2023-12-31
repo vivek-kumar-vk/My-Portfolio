@@ -9,6 +9,14 @@
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script> 
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+emailjs.init("hO8p4Bu05TdXSY7rt");
+})();
+</script>
 </head>
 
 <body>
@@ -21,10 +29,10 @@
         </div>
 
         <div class="nav-item">
-          <div><a href="" #projects"> <span class="number">01.</span>Projects</a></div>
-          <div><a href="" #aboutme"> <span class="number">02.</span>About Me</a></div>
-          <div> <a href="" #skills"> <span class="number">03.</span>Skills</a></div>
-          <div><a href="" #contactme"> <span class="number">04.</span>Contact Me</a></div>
+          <div><a href="#projects"> <span class="number">01.</span>Projects</a></div>
+          <div><a href="#aboutme"> <span class="number">02.</span>About Me</a></div>
+          <div> <a href="#skills"> <span class="number">03.</span>Skills</a></div>
+          <div><a href="#contactme"> <span class="number">04.</span>Contact Me</a></div>
         </div>
       </div>
 
@@ -45,8 +53,7 @@
             I’m a Aspiring Software Developer and here is my portfolio website.
             Here you’ll learn about my journey.
           </div>
-          <!-- https://drive.google.com/file/d/14Vkxf0wTnp3zhMJ1OanzHbDaH1on87Py/view?usp=sharing -->
-          <a href="https://drive.google.com/uc?export=download&id=14Vkxf0wTnp3zhMJ1OanzHbDaH1on87Py">
+          <a href="">
             <div class="btn-pink" id="btn">Hire Me</div>
           </a>
         </div>
@@ -73,7 +80,7 @@
         </div>
       </div>
     </div>
-    <div class="project-section">
+    <div class="project-section" id="projects">
       <h2 class="page-header">Projects</h2>
 
 
@@ -156,19 +163,19 @@
     </div>
     <div id="skills" class="container skill-container">
       <div class="skill-fade-text">Skills</div>
-      <div class="skill-container-left">
+      <div class="skill-container-left" id="aboutme">
         <h2 class="skill-heading">
           <span class="caps">M</span>e and
           <br />
           MyTech Stack
         </h2>
 
-        <div class="skill-subHeading">
+        <div class="skill-subHeading" >
           <p>
             I am a highly motivated computer science & engineering student with a passion for technology and its application in solving real-world problems. Goal is to work with an organization where I can learn new skills and increase my abilities for the organizational goals as well as myself.
           </p>
           <p>
-            As a tech enthusiast, I'm currently exploring in Software Development, Full Stack Development & pursuing 𝐁.𝐓𝐞𝐜𝐡 from Durgapur Institute of Advanced Technology & Management and love exploring new technologies.
+            As a tech enthusiast, I'm currently exploring in Software Development, Full Stack Development & completed 𝐁.𝐓𝐞𝐜𝐡 from SJB Institute of Technology and love exploring new technologies.
           </p>
           <!-- <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quidem
@@ -203,7 +210,77 @@
         <img src="./images/stack/netlify.svg" alt="" class="skills-logo" />
       </div>
     </div>
+    <div class="contactus-form-container" id="contactme">
+      <div class="container">
 
+        <h1 class="contactus-heading">Contact me</h1>
+
+        <h3 class="contactus-sub-heading">
+          Questions, thoughts, or just want to say hello?
+        </h3>
+
+
+        <div class="contactus-form-container">
+          <form class="form" action="javascript:void(0)">
+            <div class="formfield-container">
+              <input class="formfield" type="text" name="name" id="name" placeholder="Full Name" required/>
+
+              <input class="formfield" type="email" name="email" id="email" placeholder="Enter your email address" required/>
+
+              <!-- <input class="formfield" type="text" name="subject" id="subject" placeholder="Enter your subject" /> -->
+
+              <textarea name="message" id="message" cols="30" rows="10" class="formfield formfield-textarea" placeholder="Enter your message" required></textarea>
+
+            </div>
+            
+            <div>
+              <button type="submit" class="btn-pink" id="submit-btn" onclick="sendMail()">
+                Send Message<i class="submit-icon fa-solid fa-paper-plane"></i>
+              </button>
+            </div>
+
+          </form>
+
+        </div>
+
+
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-faded-text">Vivek Kumar</div>
+
+          <div class="link-wrapper">
+            <div>
+              <a href="#home">Home</a>
+            </div>
+            <div>
+              <a href="#skills">About</a>
+            </div>
+            <div>
+              <a href="#projects">Projects</a>
+            </div>
+            <div>
+              <a href="#skills">Skills</a>
+            </div>
+            <div>
+              <a href="#contactme">Contact Me</a>
+            </div>
+          </div>
+
+          <div class="icon-wrapper">
+           <a href="" target="_blank"><i class="fa-brands fa-linkedin icon"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-github icon"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-twitter icon"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-instagram icon"></i></a>
+            <a href="" target="_blank"><i class="fa-regular fa-envelope icon"></i></a>
+          </div>
+
+        </div>
+      </div>
+    </footer>
 
   </div>
  
